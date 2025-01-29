@@ -1,0 +1,17 @@
+name = "e-math"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["EMath"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+autoImplicit = false
+linter.style.longLine = true
+
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[[lean_lib]]
+name = "EMath"
